@@ -109,3 +109,19 @@ function ariJ_handle_form_submission_newsletter() {
     };
 };
 add_action('init', 'ariJ_handle_form_submission_newsletter');
+
+
+
+// Attempts to switch default theme to AriJ
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
+}
+
+function activate_theme() {
+    $theme = wp_get_theme('AriJ');
+    if (!$theme->exists()) {
+        return;
+    }
+    switch_theme('AriJ');
+}
+add_action('after_switch_theme', 'activate_theme');

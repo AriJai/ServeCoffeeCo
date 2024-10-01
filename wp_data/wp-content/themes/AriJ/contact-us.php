@@ -9,7 +9,7 @@
 
 <main class="max-w-4xl my-24 mx-auto px-5 md:px-0">
     <h2 class="text-3xl mt-10 mb-8 mx-auto text-center">Contact Us</h2>
-    <p class = "text-center text-xl">Got a question for us, or do you have anything you want to share?<br>Send us a message and we will get back to you at the nearest convenience! Thank you for stopping by!</p>
+    <p class = "text-center text-xl">Got a question for us, or do you have anything you want to share?<br>Send us a message and we will get back to you at the nearest convenience!</p>
     <br>
     <form action="<?php echo esc_url( $_SERVER['REQUEST_URI'] ); ?>" method="post" class="m-0 mx-auto flex flex-col items-center">
         <input type="hidden" name="form_type" value="contact">
