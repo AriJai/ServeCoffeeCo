@@ -1,0 +1,20 @@
+{
+  "name": "arij",
+  "version": "1.0.0",
+  "main": "index.php",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./tailwind.css -o ./src/styles.css --watch",
+    "build:prod": "tailwindcss -i ./tailwind.css -o ./src/styles.css"
+  },
+  "keywords": [],
+  "author": "Arian Jaihooni",
+  "license": "ISC",
+  "description": "A cozy WordPress theme with Tailwind CSS integration",
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "tailwindcss-filters": "^3.0.0"
+  }
+}
